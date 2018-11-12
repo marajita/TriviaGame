@@ -1,0 +1,53 @@
+.mainHeading{
+        height: 235px;
+        margin-right: 100%;
+}
+
+#heading{
+    height: 200px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+body{
+    background: #180201;
+
+}
+
+.btn-start{    
+    text-align:center;
+}
+
+.btn-big{
+    width: 200px;
+    height: 100px;
+}
+
+p {
+    font-size: 20px;
+    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    color: goldenrod;
+    
+}
+
+h3 {
+    font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
+    color: goldenrod;
+}
+
+.answers{
+    display:-webkit-inline-box;
+    
+}
+
+input[type="radio"]{
+    margin: 0 5px 0 20px;
+  }
+
+  .timer{
+    color: bisque;
+    font-family: sans-serif;
+    font-size: 20px;
+    position: relative;
+  }

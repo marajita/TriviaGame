@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<title>Trivia Game</title>
+
+<head>
+    <meta charset="UTF-8">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <div class="mainHeading">
+        <img id="heading" src="assets/images/trivia.gif">
+    </div>
+
+    <div class="btn-start">
+        <button id="start" type="button" class="btn btn-warning btn-lg btn-big"> Start </button>
+    </div>
+
+    <div class="container" id="questions">
+        <div class=row>
+            <div class="timer">
+                <h2>Time Remaining: <span id="timeRemaining"></span> </h2>
+            </div>
+        </div>
+        <br>
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>1. What was the longest movie to win the Oscar for "Best Picture"?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="1" value="Lawrence of Arabia">Lawrence of Arabia</p>
+                    <p><input type="radio" name="1" value="Gone With the Wind">Gone With the Wind</p>
+                    <p><input type="radio" name="1" value="War and Peace">War and Peace</p>
+                    <p><input type="radio" name="1" value="Cleopatra">Cleopatra</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>2. Who was the youngest actress to win an Oscar?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="2">Patty Duke</p>
+                    <p><input type="radio" name="2">Tatum O'Neal</p>
+                    <p><input type="radio" name="2">Anna Paquin</p>
+                    <p><input type="radio" name="2">Shirley Temple</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>3. Three Movies have won 11 Oscars. "Lord of the Rings" and "Titanic" are two, what is the other
+                    one?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="3">West Side Story</p>
+                    <p><input type="radio" name="3">The Ten Commandments</p>
+                    <p><input type="radio" name="3">Ben Hur</p>
+                    <p><input type="radio" name="3">Schindler's List</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>4. How much does Oscar weigh?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="4">10 lbs</p>
+                    <p><input type="radio" name="4">8 lbs</p>
+                    <p><input type="radio" name="4">8.5 lbs</p>
+                    <p><input type="radio" name="4">5 lbs </p>
+                </div>
+            </div>
+        </div>
+
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>5. How tall is the Oscar statue?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="5">13.5 inches</p>
+                    <p><input type="radio" name="5">15 inches</p>
+                    <p><input type="radio" name="5">13 inches</p>
+                    <p><input type="radio" name="5">14.25 inches</p>
+                </div>
+            </div>
+        </div>
+
+        <div class=row>
+            <div class="col-lg-12">
+                <h3>6. Which director has won the most Academy Awards for Best Director?</h3>
+                <div class="answers">
+                    <p><input type="radio" name="6">Steven Spielburg</p>
+                    <p><input type="radio" name="6">Ron Howard</p>
+                    <p><input type="radio" name="6">William Wyler</p>
+                    <p><input type="radio" name="6">John Ford</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="answerID">
+        <p> All Done!!</p>
+        <p>Total question: <span id="totalQuestion"></span> </p>
+        <p>Correct Answers: <span id="correct"></span> </p>
+        <p>Incorrect Answers: <span id="incorrect"></span> </p>
+        <p>Unanswered: <span id="notanswered"></span> </p>
+    </div>
+
+
+    </div>
+
+</body>
+
+</html>

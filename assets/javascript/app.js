@@ -5,7 +5,7 @@
 //it should run once the user hits the start button
 //make the question display
 
-var totalTime = 25;
+var totalTime = 800;
 var time;
 var totalQuestion = 6;
 var totalCorrect = 0;

@@ -1,4 +1,4 @@
-var totalTime = 5;
+var totalTime = 30;
 var totalQuestion = 6;
 var totalCorrect = 0;
 var totalIncorrect = 0;
@@ -13,6 +13,8 @@ function timedCount() {
     $(".container").css("display", "none");
     $("#answerID").css("display", "block");
     $("#btnReset").css("display", "block");
+    $("#btnsubmit").css("display", "none");
+
     clearTimeout(time);
   }
 
@@ -27,26 +29,40 @@ $(document).ready(function() {
   $("#questions").css("display", "none");
   $("#answerID").css("display", "none");
   $("#btnReset").css("display", "none");
+  $("#btnsubmit").css("display", "none");
 
   //to display the container after clicking start button and hides the start button
   $("#start").click(function() {
     $("#questions").css("display", "block");
+    $("#btnsubmit").css("display", "block");
     $("#start").hide();
     timedCount();
   });
 
   $("#reset").click(function() {
-    resetValue();
     $("#answerID").css("display", "none");
     $("#btnReset").css("display", "none");
-    $("#start").show();
+    $("#questions").css("display", "block");
+    $("#btnsubmit").css("display", "block");
+    resetValue();
+    timedCount();
     $("input:radio").prop("checked", false); //to uncheck the radio button or reset answers
     unanswered = 6;
     totalIncorrect = 0;
+    totalCorrect = 0;
+  });
+
+  $("#submit").click(function() {
+    $(".container").css("display", "none");
+    $("#answerID").css("display", "block");
+    $("#btnReset").css("display", "block");
+    $("#btnsubmit").css("display", "none");
+
+    clearTimeout(time);
   });
 
   function resetValue() {
-    totalTime = 5;
+    totalTime = 30;
   }
 
   function calculateUnanswered() {

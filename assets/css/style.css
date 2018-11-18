@@ -31,7 +31,8 @@ p {
   color: goldenrod;
 }
 
-h3 {
+h4,
+h2 {
   font-family: "Cambria, Cochin, Georgia, Times, 'Times New Roman', serif";
   color: goldenrod;
 }
@@ -53,9 +54,10 @@ input[type="radio"] {
 
 .container {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 25px;
 }
 
-.button-reset {
+.button-reset,
+.button-submit {
   text-align: -webkit-center;
 }
